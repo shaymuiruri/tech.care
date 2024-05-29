@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h1>Tech.Care</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#" class="active">Patients</a></li>
+                    <li><a href="#">Schedule</a></li>
+                    <li><a href="#">Message</a></li>
+                    <li><a href="#">Transactions</a></li>
+                </ul>
+            </nav>
+            <div class="patients-list">
+                <h2>Patients</h2>
+                <ul>
+                    <li>Emily Williams <span>Female, 18</span></li>
+                    <li>Ryan Johnson <span>Male, 45</span></li>
+                    <li>Brandon Mitchell <span>Male, 35</span></li>
+                    <li>Jessica Taylor <span class="active">Female, 28</span></li>
+                    <!-- Add more patients as needed -->
+                </ul>
+            </div>
+        </aside>
+        <main>
+            <header class="header">
+                <div class="user-info">
+                    <p>Dr. Jesse Simmons</p>
+                    <p>General Practitioner</p>
+                </div>
+                <div class="profile-pic">
+                    <img src="path/to/profile-pic.png" alt="Profile Picture">
+                </div>
+            </header>
+            <section class="diagnosis-history">
+                <h2>Diagnosis History</h2>
+                <div class="chart">
+                    <canvas id="bloodPressureChart"></canvas>
+                </div>
+                <div class="stats">
+                    <div class="stat">
+                        <p>Respiratory Rate</p>
+                        <p>20 bpm <span>Normal</span></p>
+                    </div>
+                    <div class="stat">
+                        <p>Temperature</p>
+                        <p>98.6°F <span>Normal</span></p>
+                    </div>
+                    <div class="stat">
+                        <p>Heart Rate</p>
+                        <p>78 bpm <span>Normal</span></p>
+                    </div>
+                </div>
+            </section>
+            <section class="diagnostic-list">
+                <h2>Diagnostic List</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Problem/Diagnosis</th>
+                            <th>Description</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hypertension</td>
+                            <td>Chronic high blood pressure</td>
+                            <td>Under Observation</td>
+                        </tr>
+                        <tr>
+                            <td>Type 2 Diabetes</td>
+                            <td>Insulin resistance and elevated blood sugar</td>
+                            <td>Under Observation</td>
+                        </tr>
+                        <tr>
+                            <td>Asthma</td>
+                            <td>Recurrent episodes of bronchial constriction</td>
+                            <td>Under Observation</td>
+                        </tr>
+                        <!-- Add more diagnoses as needed -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <aside class="sidebar right-sidebar">
+            <div class="patient-info">
+                <img src="path/to/patient-pic.png" alt="Jessica Taylor">
+                <h3>Jessica Taylor</h3>
+                <p>Date of Birth: August 21, 1996</p>
+                <p>Gender: Female</p>
+                <p>Contact: (453) 555-1234</p>
+                <p>Emergency Contact: (453) 555-5678</p>
+                <p>Insurance Provider: Sunrise Health Assurance</p>
+                <button>Show All Information</button>
+            </div>
+            <div class="lab-results">
+                <h2>Lab Results</h2>
+                <ul>
+                    <li>Blood Tests <a href="#">Download</a></li>
+                    <li>CT Scans <a href="#">Download</a></li>
+                    <li>Radiology Reports <a href="#">Download</a></li>
+                    <li>Urine Test <a href="#">Download</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

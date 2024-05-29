@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f8fc;
+    margin: 0;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar, .right-sidebar {
+    background-color: #fff;
+    padding: 20px;
+    width: 20%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar {
+    border-right: 1px solid #eaeaea;
+}
+
+.right-sidebar {
+    border-left: 1px solid #eaeaea;
+}
+
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    top:0;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar nav ul li a.active, .sidebar nav ul li a:hover {
+    color: #00b4d8;
+}
+
+.patients-list {
+    flex: 1;
+}
+
+.patients-list h2 {
+    margin-bottom: 10px;
+}
+
+.patients-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.patients-list ul li {
+    padding: 10px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.patients-list ul li span {
+    display: block;
+    color: #999;
+}
+
+.patients-list ul li span.active {
+    color: #00b4d8;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header .user-info p {
+    margin: 0;
+}
+
+.diagnosis-history, .diagnostic-list {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.diagnosis-history .chart {
+    margin-bottom: 20px;
+}
+
+.diagnosis-history .stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.diagnosis-history .stat {
+    flex: 1;
+    text-align: center;
+}
+
+.diagnosis-history .stat:not(:last-child) {
+    margin-right: 10px;
+}
+
+.diagnostic-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.diagnostic-list th, .diagnostic-list td {
+    padding: 10px;
+    border: 1px solid #eaeaea;
+}
+
+.patient-info img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.patient-info button {
+    background-color: #00b4d8;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.lab-results h2 {
+    margin-bottom: 10px;
+}
+
+.lab-results ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lab-results ul li {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
